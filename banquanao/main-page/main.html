@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Pricing</title>
+  <!-- Link CSS Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main-css/style.css">
+  
+</head>
+
+<body>
+
+  <header> 
+ 
+    <nav class="navbar navbar-expand-lg navbar-light  container-fluid">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#"><img src="../img/logo.jpg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Birthday-event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../login&signup/logsign.html">Login</a>
+                <a class="dropdown-item" href="../login&signup/logsign.html">Sign Up</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+
+    <!-- Banner -->
+    <main>
+
+      <div class="container">
+        <div class="banner-container">
+          <div class="banner">
+            <img src="../img/banner.jpg" alt="Banner 1">
+          </div>
+          <div class="banner">
+            <img src="../img/banner2.jpg" alt="Banner 2">
+          </div>
+          <div class="banner">
+            <img src="../img/banner.jpg" alt="Banner 3">
+          </div>
+          <button class="prev-btn" onclick="prevBanner()">&#10094;</button>
+          <button class="next-btn" onclick="nextBanner()">&#10095;</button>
+        </div>
+
+
+
+        <h1 class="text-center mt-5 mb-4">Our Products</h1>
+        
+        <!-- Filter Dropdown -->
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <select class="form-control" id="category-filter">
+              <option value="">All Categories</option>
+              <option value="Pants">Pants</option>
+              <option value="Shirts">Shirts</option>
+              <option value="Shoes">Shoes</option>
+              <option value="Hats">Hats</option>
+            </select>
+          </div>
+        </div>
+        <!-- Product Grid -->
+        <div class="row" id="product-list">
+          <!-- Products will be dynamically added here -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <ul class="pagination" id="pagination">
+              <!-- Pagination links will be dynamically added here -->
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <!-- Footer content here -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-info">
+              <h5>Contact Information</h5>
+              <p>Hai Ba Trung - Ha noi</p>
+              <p>Email: tranthai2309hg@gmail.com</p>
+              <p>Phone: +84 86 7747 280</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feedback">
+              <h5>Send Feedback</h5>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Link JS Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="main-js/script.js"></script>
+</body>
+
+</html>

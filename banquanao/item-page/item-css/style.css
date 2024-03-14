@@ -1,0 +1,277 @@
+
+    
+
+    /*item*/
+    .policy,
+    .shipping,
+    .color {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .action-buttons {
+      margin-top: 20px;
+    }
+
+    .action-buttons button {
+      padding: 10px 20px 10px 10px;
+      font-size: 16px;
+      margin-right: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5%;
+    }
+
+    .action-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /*logo*/
+    .navbar{
+      z-index: 2;
+      background-color: rgb(68, 63, 223);
+     }
+  
+    .logo img {
+      width: 30px;
+      height: 30px;
+  }
+
+    .container {sss
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .product-box{
+      border-color: #007bff;
+      border: 5px;
+      background-color: rgb(48, 212, 135);
+      border-radius: 2%;
+     
+
+    }
+
+    .product-details {
+      padding: 90px;
+      display: flex;
+      justify-content: space-around;
+   
+      
+    }
+
+    .product-image {
+      padding: 10px 10px 10px 10px;
+      flex: 1;
+      
+    }
+
+    .product-info {
+      margin: 20px 20px 20px 20px;
+      flex: 2;
+      border-color: #007bff;
+      border: 5px;
+      
+      
+    }
+
+    .product-details {
+      display: flex;
+    }
+
+    .product-image {
+      width: 300px;
+      height: 300px;
+      flex: 1;
+      margin-right: 20px;
+      max-width: 100%;
+      max-height: 100%;
+  
+      height: auto;
+     
+      object-fit: contain;
+    
+    }
+
+    .product-image img {
+      max-width: 100%;
+      border-color: aquamarine;
+      border: 1px;
+      border-radius: 5%;
+    }
+
+    .product-info {
+      margin-top: 40px;
+      flex: 2;
+    }
+
+    .product-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .add-to-cart-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: #45a049;
+    }
+
+    
+
+    
+    @media screen and (max-width: 576px) {
+      .product-title {
+      
+        font-size: 20px;
+      
+      }
+
+      .product-image {
+       
+        max-width: 50%;
+      }
+
+    
+      
+
+      
+    }
+
+    
+    @media screen and (min-width: 577px) and (max-width: 768px) {
+      .product-title {
+       
+        font-size: 22px;
+        
+      }
+
+      .product-image {
+        
+        max-width: 70%;
+        
+      }
+
+      
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+      .product-title {
+        
+        font-size: 26px;
+       
+      }
+
+      .product-image {
+
+        max-width: 80%;
+        
+      }
+
+     
+ 
+      
+
+      
+    }
+
+    
+    @media screen and (min-width: 993px) {
+     
+    }
+
+    footer {
+      background-color: rgb(6, 6, 7); 
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .contact-info,
+    .feedback {
+      margin: 20px 0;
+      color: #f8f9fa;
+      /* Add margin to both sections */
+    }
+
+    /*contact info */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .contact-info h5 {
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+      line-height: 1.5;
+      /* Add line-height for readability */
+    }
+  .sale-text{
+    text-decoration: line-through;
+    color:red;
+  }
+  /*button*/
+
+.quantity-selection {
+  display: flex;
+  align-items: center;
+}
+
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+}
+.size.button-size {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  border : 2px ;
+  margin : 5px 5px 5px 5px;
+}
+
+.size.button-size.active {
+  border-color: red;
+  
+}
+
+.text-num{
+  margin-top: 10px;
+}
+.box-pd{
+  display:flex;
+  justify-content: center;
+}
